@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+          
+            width: 100%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+        }
+        .box {
+	height: 200px; 
+	background-color: lightblue; 
+	box-sizing: border-box; 
+	border: 1px solid #000; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	margin: 10px;
+			padding: 0;
+			
+        }
+		.row{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			margin: 0 auto;
+		}
+		.header{
+	background-color: #F3EAEB;
+	padding: 20px;
+	text-align: center;
+	color: hsla(144,29%,3%,1.00);
+	width: 1100px;
+			margin: 0;
+}
+
+    .g {
+	background-image: url(img/rrr.jpg);
+}
+    .o {
+	background-image: url(img/bbb.jpg);
+}
+    .ddd {
+	background-image: url(img/ccc.jpg);
+}
+    .a {
+	background-image: url(img/www.jpg);
+}
+    .w {
+}
+    .q {
+	font-family: "唯你主义浪漫行书";
+	font-size: small;
+}
+    .u {
+	font-family: "字魂苍劲行楷体(商用需授权)", "幼圆", "新宋体", "微软雅黑";
+}
+    body {
+	background-image: url(img/e.png);
+	background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+<div class="header">
+  <h1><em><strong class="h1">王曼昱：成长之路</strong></em></h1>
+  <p class="u">经过了摸爬滚打和自我否定的王曼昱，- -路上也积攒了很多的决心和很多的勇气，“我用了很长一段时间和自己的性格、和自己这个人，斗。”在新的巴黎奥运周期里，王曼昱为新的梦想燃烧了起来，她很 坚定，“ 没有什么能击垮我，没有打不赢的敌人，没有打不赢的仗”。</p>
+</div>
+    <div class="container">
+	  <div class="row">
+        <div class="box w">
+          <p class="q">
+进入国家队后的王曼昱高开高走，2014年， 她在香港青少年公开赛中获得了青年组的单打、双打和团体三冠;全国青锦赛，她成功卫冕女单;全锦赛上,她以优异的表现帮助黑龙江女队夺得团体冠军;世青赛上，她又把女团和女单两枚金牌收入囊中。一连串的出色战绩，让王曼昱收获了“有潜力，前途一片光明”的赞誉，而这赞誉对于一个15岁的孩子来说，可能有些沉重。</p>
+        </div>
+        <div class="box">
+          <p class="q">在东京奥运周期里，蒸蒸日，上的王曼昱开始期待着自己的第一次奥运之旅。然而进入2019年以来，她似乎又陷入一个新的低谷，除了在布达佩斯世乒赛上 携手孙颖莎女双夺冠，“ 锁死”了这一对王牌搭档外，在单打赛场上，她被陈梦和孙颖莎甩在了后面。</p>
+        </div>
+        <div class="box">
+          <p class="q">东京奥运会名单出炉，王曼昱将以P卡身份出征。对于一直梦想作为正选参加奥运会的王曼昱来说，说没有失望是假的，但她也有重新燃起的冲劲。“时刻准备好，在队伍需要我的时候，全力展现出最 完美的自己。”这是一个 替补选手在出发时的标准发言，而王曼昱那时候可能也没想到，队伍真的在那么关键的时候需要她了。</p>
+        </div>
+        <div class="box">
+          <p class="q">捧起吉盖斯特杯后，王曼昱回想到从布达佩斯 到休斯敦这一路，深情地说:‘ 我的瓶颈期，是没有拿冠军，又不只是没有拿冠军那么简单。我想到的是这中间我度过的每一天，都和我的这个单打冠军密不可分。从奥运会到全运会，再到世乒赛，我能发挥出来的水平、我能做到的事，并不是我原本就可以做到的，而是经过很长很长时间的摸爬滚打，经过很多很多次的失败后，才做到的。</p>
+        </div></div>
+	  <div class="row">
+        <div class="box g">5</div>
+        <div class="box o">6</div>
+        <div class="box ddd">7</div>
+        <div class="box a">8</div>
+    </div></div>
+	
+</body>
+</html>
