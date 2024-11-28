@@ -1,85 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>优秀品质</title>
-    <style>
-        .container {
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 主盒子的样式 */
+ .main-box {
 	width: 600px;
-	height: 600px;
-	border: 2px solid #000;
+	height: 500px;
+	background-color: lightgray;
 	position: relative;
-	margin: 50px auto; 
-	background-image: url(d.png);
-        }
+	background-image: url(image/d.png);
+    }
 
-        .circle-box {
+    /* 左下角圆圈盒子的样式 */
+ .circle-box {
 	width: 300px;
 	height: 300px;
+	background-color: blue;
 	border-radius: 50%;
-	background-color: hsla(0,27%,96%,1.00);
 	position: absolute;
-	bottom: -50px;
-	left: -50px;
-	background-image: url(e.jpg);
-        }
-		.small-box {
-	width: 300px;
-	height: 150px;
-	position: absolute;
-	background-color: hsla(0,0%,100%,0.00);
+	bottom: -100px;
+	left: -100px;
+	transition: transform 0.5s ease;
+	background-image: url(image/e.jpg);
+    }
+	  .small-box{
+	width: 400px;
+	height: 100px;
 	bottom: 0;
-	right: 0;
-		}
-    .y1 {
+	right: 0px;
+	position: absolute;
 	font-family: "唯你主义浪漫行书";
-}
-    .t1 {
-	font-family: "Aa筆墨春秋 超清楷书 (非商业使用)";
 	font-size: large;
-	width: auto;
-	height: 60px;
-}
-    .t2 {
-	font-family: "Aa筆墨春秋 超清楷书 (非商业使用)";
-	font-size: large;
-	height: 60px;
-}
-    .t3 {
-}
-.t3 {
-	font-family: "Aa筆墨春秋 超清楷书 (非商业使用)";
-	font-size: large;
-}
-    .e {
-	font-family: "Aa筆墨春秋 超清楷书 (非商业使用)";
-	font-size: large;
-}
-    .y {
-	font-family: "唯你主义浪漫行书";
-	color: hsla(229,97%,46%,1.00);
-}
-    .gg {
-	font-size: xx-large;
-}
-    </style>
-</head>
-<body>
-<div class="gg"><a href="index.html"> 回主页</a></div>
-<div class="container">
-  <h1 class="y1">优秀品质</h1>
-      <li class="t1">不畏困难：“每一次困难出现，我都需要抱着“一定要战胜”的信念，而不是把“困难是制造的”当成我做不到的理由.</li>
-      <li class="t2">敢于拼搏：“当然希望一块一块去夺吧。夺，不是拿，是夺，去拼金牌吧。”<br>
-</li>
-      <li class="t3">忠于自己：“我不想成为谁，我想成为自己。”</li>
-<div class="circle-box"></div>
-		<div class="small-box">
-		  <li class="e">善于调整：“没有永远的失败，只有暂时的失利。”
+	  }
 
-</li>
-		  <p class="y">王曼昱的话很质朴，简短，却总能给我带来力量。</p>
-        </div>
+    /* 当鼠标悬停在圆圈盒子上时，让圆圈盒子和图片一起旋转 */
+ .circle-box:hover {
+      transform: rotate(360deg);
+    }
+
+    /* 圆圈盒子内图片的样式 */
+ .circle-box img {
+      width: 100%;
+      height: 100%;
+      /* 设置绝对定位，使其填满整个圆圈盒子 */
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* 同样设置过渡效果，与圆圈盒子保持一致 */
+      transition: transform 0.5s ease;
+    }
+
+    /* 当鼠标悬停在圆圈盒子上时，图片也跟着旋转 */
+ .circle-box:hover img {
+      transform: rotate(360deg);
+    }
+
+    /* 在body上设置flex布局相关属性，使主盒子居中 */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  .d1 {
+}
+  .s {
+	font-family: "Aa筆墨春秋 超清楷书 (非商业使用)";
+}
+  .a {
+	height: 70px;
+	font-family: "唯你主义浪漫行书";
+	font-size: large;
+}
+  </style>
+  <title>Box with Circle Box and Rotating Image</title>
+</head>
+
+<body>
+  <!-- 主盒子 -->
+  <div class="main-box d1">
+    <h1 class="s">
+ 优秀品质</h1>
+    <li class="a">不畏困难：“每一次困难出现，我都需要抱着“一定要战胜”的信念，而不是把“困难是制造的”当成我做不到的理由.</li>
+    <li class="a">敢于拼搏：“当然希望一块一块去夺吧。夺，不是拿，是夺，去拼金牌吧。”</li>
+	  <li class="a">忠于自己：“我不想成为谁，我想成为自己。”“奥运归来能和启蒙老师挽着一起去训练，可能这是忠于自我者才有的幸福。”</li>
+    
+    <!-- 左下角的圆圈盒子 -->
+    <div class="circle-box">
     </div>
+	  <div class="small-box">
+	    <li>善于调整：“没有永远的失败，只有暂时的失利</li>
+		  <p>
+        王曼昱的话很质朴，简短，却总能给人带来力量。</p>
+		  <p><a href="index.html">返回主页</a></p><p>点转盘有惊喜</p>
+  </div></div>
 </body>
+
 </html>
